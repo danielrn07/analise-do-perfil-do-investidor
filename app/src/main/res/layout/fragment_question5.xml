@@ -4,66 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question2Fragment">
+    tools:context=".Question5Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv_question2"
+            android:id="@+id/tv_question5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="100dp"
-            android:text="Qual o objetivo desse investimento?"
+            android:text="Caso as suas aplicações sofressem uma queda superior a 30%, o que você faria?"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
-            android:id="@+id/rd_group_q2"
+            android:id="@+id/rd_group_q5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_question2">
+            app:layout_constraintTop_toBottomOf="@+id/tv_question5">
 
             <RadioButton
-                android:id="@+id/rd_q2_btn1"
+                android:id="@+id/rd_q5_btn1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Preservação do capital para não perder valor ao longo do tempo,
-assumindo baixos riscos de perdas" />
+                android:text="Resgataria toda a aplicação e aplicaria na poupança" />
 
             <RadioButton
-                android:id="@+id/rd_q2_btn2"
+                android:id="@+id/rd_q5_btn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos
-moderados" />
+                android:text="Manteria aplicação aguardando uma melhora do mercado" />
 
             <RadioButton
-                android:id="@+id/rd_q2_btn3"
+                android:id="@+id/rd_q5_btn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmo
-que isso implique assumir riscos de perdas elevadas
-" />
+                android:text="Aumentaria a aplicação para aproveitar as oportunidades do mercado" />
 
-            <RadioButton
-                android:id="@+id/rd_q2_btn4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa
-de retorno média do mercado, assumindo riscos elevados" />
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_avancar_q2"
+            android:id="@+id/btn_avancar_q5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
