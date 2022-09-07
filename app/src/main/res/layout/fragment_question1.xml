@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="100dp"
+            android:text="Por quanto tempo você pretende deixar seu dinheiro investido?"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_question1">
+
+            <RadioButton
+                android:id="@+id/rd_q1_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menos de 6 meses" />
+
+            <RadioButton
+                android:id="@+id/rd_q1_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entre 6 meses e 1 ano" />
+
+            <RadioButton
+                android:id="@+id/rd_q1_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entre 1 ano e 3 anos" />
+
+            <RadioButton
+                android:id="@+id/rd_q1_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acima de 3 anos" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="100dp"
+            android:text="Próxima"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
