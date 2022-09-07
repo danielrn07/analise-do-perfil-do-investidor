@@ -8,7 +8,7 @@ import br.edu.infnet.analise_do_perfil_do_investidor.databinding.ActivityMainBin
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
