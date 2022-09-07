@@ -11,54 +11,59 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv_question1"
+            android:id="@+id/tv_question2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="100dp"
-            android:text="Por quanto tempo você pretende deixar seu dinheiro investido?"
+            android:text="Qual o objetivo desse investimento?"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
-            android:id="@+id/rd_group_q1"
+            android:id="@+id/rd_group_q2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_question1">
+            app:layout_constraintTop_toBottomOf="@+id/tv_question2">
 
             <RadioButton
-                android:id="@+id/rd_q1_btn1"
+                android:id="@+id/rd_q2_btn1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Menos de 6 meses" />
+                android:text="Preservação do capital para não perder valor ao longo do tempo,
+assumindo baixos riscos de perdas" />
 
             <RadioButton
-                android:id="@+id/rd_q1_btn2"
+                android:id="@+id/rd_q2_btn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Entre 6 meses e 1 ano" />
+                android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos
+moderados" />
 
             <RadioButton
-                android:id="@+id/rd_q1_btn3"
+                android:id="@+id/rd_q2_btn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Entre 1 ano e 3 anos" />
+                android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmo
+que isso implique assumir riscos de perdas elevadas
+" />
 
             <RadioButton
-                android:id="@+id/rd_q1_btn4"
+                android:id="@+id/rd_q2_btn4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Acima de 3 anos" />
+                android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa
+de retorno média do mercado, assumindo riscos elevados" />
         </RadioGroup>
 
         <Button
-            android:id="@+id/btn_avancar_q1"
+            android:id="@+id/btn_avancar_q2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
