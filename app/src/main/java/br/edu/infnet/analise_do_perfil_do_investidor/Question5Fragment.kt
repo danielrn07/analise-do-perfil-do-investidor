@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import br.edu.infnet.analise_do_perfil_do_investidor.databinding.FragmentQuestion5Binding
 
 class Question5Fragment : Fragment() {
@@ -14,9 +15,14 @@ class Question5Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentQuestion5Binding.inflate(inflater, container, false)
         val view  = binding.root
+
+        binding.btnAvancarQ5.setOnClickListener {
+            view.findNavController().navigate(R.id.action_question5Fragment_to_question6Fragment)
+        }
+
         return view
     }
 

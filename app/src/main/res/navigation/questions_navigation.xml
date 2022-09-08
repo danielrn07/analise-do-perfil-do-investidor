@@ -18,5 +18,68 @@
         android:id="@+id/question2Fragment"
         android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question2Fragment"
         android:label="fragment_question2"
-        tools:layout="@layout/fragment_question2" />
+        tools:layout="@layout/fragment_question2" >
+        <action
+            android:id="@+id/action_question2Fragment_to_question3Fragment"
+            app:destination="@id/question3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question3Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question3Fragment"
+        android:label="fragment_question3"
+        tools:layout="@layout/fragment_question3" >
+        <action
+            android:id="@+id/action_question3Fragment_to_question4Fragment"
+            app:destination="@id/question4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question4Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question4Fragment"
+        android:label="fragment_question4"
+        tools:layout="@layout/fragment_question4" >
+        <action
+            android:id="@+id/action_question4Fragment_to_question5Fragment"
+            app:destination="@id/question5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question5Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question5Fragment"
+        android:label="fragment_question5"
+        tools:layout="@layout/fragment_question5" >
+        <action
+            android:id="@+id/action_question5Fragment_to_question6Fragment"
+            app:destination="@id/question6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question6Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question6Fragment"
+        android:label="fragment_question6"
+        tools:layout="@layout/fragment_question6" >
+        <action
+            android:id="@+id/action_question6Fragment_to_question7Fragment"
+            app:destination="@id/question7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question7Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question7Fragment"
+        android:label="fragment_question7"
+        tools:layout="@layout/fragment_question7" >
+        <action
+            android:id="@+id/action_question7Fragment_to_question8Fragment"
+            app:destination="@id/question8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question8Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question8Fragment"
+        android:label="fragment_question8"
+        tools:layout="@layout/fragment_question8" >
+        <action
+            android:id="@+id/action_question8Fragment_to_question9Fragment"
+            app:destination="@id/question9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question9Fragment"
+        android:name="br.edu.infnet.analise_do_perfil_do_investidor.Question9Fragment"
+        android:label="fragment_question9"
+        tools:layout="@layout/fragment_question9" />
 </navigation>

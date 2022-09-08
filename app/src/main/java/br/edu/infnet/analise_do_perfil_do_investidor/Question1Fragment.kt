@@ -22,9 +22,7 @@ class Question1Fragment : Fragment() {
         val view  = binding.root
 
         binding.btnAvancarQ1.setOnClickListener {
-
             view.findNavController().navigate(R.id.action_question1Fragment_to_question2Fragment)
-
         }
 
         return view

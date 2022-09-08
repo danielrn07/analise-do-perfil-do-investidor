@@ -15,7 +15,7 @@ class Question9Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentQuestion9Binding.inflate(inflater, container, false)
         val view  = binding.root
         return view
