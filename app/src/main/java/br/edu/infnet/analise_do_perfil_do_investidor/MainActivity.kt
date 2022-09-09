@@ -1,6 +1,8 @@
 package br.edu.infnet.analise_do_perfil_do_investidor
 
+import android.content.DialogInterface
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.system.Os.close
@@ -34,16 +36,35 @@ class MainActivity : AppCompatActivity() {
             showCloseAlert()
         }
 
-
     }
+
     companion object {
         val NOME = "NOME"
+    }
+
+    private fun showCredits() {
+        val uri = Uri.parse("https://www.bancopaulista.com.br/Arquivos/QuestionarioAPI.pdf")
+        startActivity(Intent(Intent.ACTION_VIEW, uri))
+    }
+
+    private fun showLinkedIn() {
+        val uri = Uri.parse("https://www.linkedin.com/in/danielrn07/")
+        startActivity(Intent(Intent.ACTION_VIEW, uri))
+    }
+
+    private fun showGithub() {
+        val uri = Uri.parse("https://github.com/danielrn07")
+        startActivity(Intent(Intent.ACTION_VIEW, uri))
     }
 
     private fun showCloseAlert() {
         val alert: AlertDialog.Builder = AlertDialog.Builder(this, R.style.ThemeCustomDialog)
         val dialogBinding: CustomDialogBinding = CustomDialogBinding
             .inflate(LayoutInflater.from(this))
+
+        dialogBinding.btnCredit.setOnClickListener { showCredits() }
+        dialogBinding.btnLinkedin.setOnClickListener { showLinkedIn() }
+        dialogBinding.btnGithub.setOnClickListener { showGithub() }
 
         alert.setView(dialogBinding.root)
         alert.show()
