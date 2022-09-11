@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question9Fragment">
+    tools:context=".Question9Fragment"
+    android:background="@drawable/bg_custom"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
             android:text="Qual o valor aproximado do seu patrimônio?"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,52 +30,66 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_question9">
+            app:layout_constraintTop_toBottomOf="@+id/guideline9">
 
             <RadioButton
                 android:id="@+id/rd_q9_btn1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Até R$ 10.000" />
 
             <RadioButton
                 android:id="@+id/rd_q9_btn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="De R$ 10.001 até R$ 100.000" />
 
             <RadioButton
                 android:id="@+id/rd_q9_btn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="De R$ 100.001 até R$ 500.000" />
 
             <RadioButton
                 android:id="@+id/rd_q9_btn4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="De R$ 500.001 até R$ 1.000.000" />
 
             <RadioButton
                 android:id="@+id/rd_q9_btn5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Acima de R$ 1.000.001 " />
 
         </RadioGroup>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_avancar_q9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_custom_dialog"
             android:text="Próxima"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="100dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

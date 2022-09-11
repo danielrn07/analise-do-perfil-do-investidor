@@ -6,14 +6,17 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bg_custom_dialog">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_credit"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginTop="16dp"
         android:text="Créditos"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:backgroundTint="#0b1c2c"
+        android:background="@drawable/bg_custom_test"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,28 +54,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_github" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_linkedin"
-        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:layout_marginTop="16dp"
         android:text="Linkedin"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:backgroundTint="#2867b2"
+        android:background="@drawable/bg_custom_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_github"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:layout_marginTop="16dp"
         android:text="GitHub"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:backgroundTint="#171515"
+        android:background="@drawable/bg_custom_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_linkedin"

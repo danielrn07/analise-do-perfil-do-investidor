@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question2Fragment">
+    tools:context=".Question2Fragment"
+    android:background="@drawable/bg_custom"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
             android:text="Qual o objetivo desse investimento?"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,50 +30,67 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_question2">
+            app:layout_constraintTop_toBottomOf="@id/guideline2">
 
             <RadioButton
                 android:id="@+id/rd_q2_btn1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Preservação do capital para não perder valor ao longo do tempo,
 assumindo baixos riscos de perdas" />
 
             <RadioButton
                 android:id="@+id/rd_q2_btn2"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos
 moderados" />
 
             <RadioButton
                 android:id="@+id/rd_q2_btn3"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmo
 que isso implique assumir riscos de perdas elevadas
 " />
 
             <RadioButton
                 android:id="@+id/rd_q2_btn4"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa
 de retorno média do mercado, assumindo riscos elevados" />
         </RadioGroup>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_avancar_q2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_custom_dialog"
             android:text="Próxima"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="100dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

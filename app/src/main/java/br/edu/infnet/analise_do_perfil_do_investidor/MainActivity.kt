@@ -9,6 +9,8 @@ import android.system.Os.close
 import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import br.edu.infnet.analise_do_perfil_do_investidor.databinding.ActivityMainBinding
 import br.edu.infnet.analise_do_perfil_do_investidor.databinding.CustomDialogBinding
@@ -32,7 +34,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<Button>(R.id.btn_sobre).setOnClickListener {
+
+        val tv_sobre = findViewById<TextView>(R.id.tv_sobre)
+        tv_sobre.setOnClickListener {
             showCloseAlert()
         }
 
