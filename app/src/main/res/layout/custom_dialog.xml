@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:lineSpacingExtra="4dp"
-        android:text="Crédito para o Banco Paulista:"
+        android:text="Metodologia adaptada do questionário do Banco Paulista"
         android:textSize="12sp"
         android:layout_marginTop="32dp"
         android:textAlignment="center"

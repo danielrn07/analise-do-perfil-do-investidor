@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         val NOME = "NOME"
+        var RESULTADO = "RESULTADO"
     }
 
     private fun showCredits() {
