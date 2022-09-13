@@ -52,7 +52,8 @@ class QuestionsActivity : AppCompatActivity(), OuvinteDeRespostas {
     }
 
     override fun onBackPressed() {
-        listaRespostas.removeLast()
+        if (listaRespostas.isNotEmpty())
+            listaRespostas.removeLast()
         super.onBackPressed()
     }
 
