@@ -32,9 +32,18 @@ class QuestionsActivity : AppCompatActivity(), OuvinteDeRespostas {
     }
 
     fun concluirQuestionario() {
+        var soma = listaRespostas.sum()
 
-        var textoEnviado = "Seu resultado foi: "
-        textoEnviado += "${listaRespostas.sum()}"
+        var textoEnviado = "Sua pontuação foi: "
+        textoEnviado += "$soma\n\n"
+
+        if (soma <= 12) {
+            textoEnviado += "Seu perfil de investidor é: Conservador"
+        } else if (soma >= 13 && soma <= 29) {
+            textoEnviado += "Seu perfil de investidor é: Moderado"
+        } else {
+            textoEnviado += "Seu perfil de investidor é: Arrojado"
+        }
 
         val intentResposta = Intent(this, ResultActivity::class.java)
         intentResposta.putExtra(MainActivity.NOME, nome)
@@ -42,8 +51,12 @@ class QuestionsActivity : AppCompatActivity(), OuvinteDeRespostas {
         startActivity(intentResposta)
     }
 
+    override fun onBackPressed() {
+        listaRespostas.removeLast()
+        super.onBackPressed()
+    }
+
     companion object {
         val RESULTADO = "RESULTADO"
     }
-
 }
