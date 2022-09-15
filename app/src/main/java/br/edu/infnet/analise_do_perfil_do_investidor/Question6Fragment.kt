@@ -39,8 +39,8 @@ class Question6Fragment : Fragment() {
                     R.id.rd_q6_btn3 -> { ouvinteDeRespostas.onAnswerSubmit(3) }
                     R.id.rd_q6_btn4 -> { ouvinteDeRespostas.onAnswerSubmit(4) }
                 }
+                view.findNavController().navigate(R.id.action_question6Fragment_to_question7Fragment)
             }
-            view.findNavController().navigate(R.id.action_question6Fragment_to_question7Fragment)
         }
 
         return view
